@@ -77,7 +77,8 @@ app.get("/api/receipts/:id", (req, res) => {
         url:
           "https://th-api.klaytnapi.com/v2/contract/nft/" + contractAddr + "/token",
         headers: {
-          "x-Chain-ID": 1001,
+          //"x-Chain-ID": 1001,
+          "x-chain-id": "8217",
           "Content-Type": "application/json",
           Authorization: authorization,
         },

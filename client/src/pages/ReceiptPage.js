@@ -136,6 +136,7 @@ class ReceiptPage extends Component {
     const { completed } = this.state;
     this.setState({ completed: completed >= 100 ? 0 : completed + 1 });
   };
+  
   render() {
     const filteredComponents = (data) => {
       if (!data) {
